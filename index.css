@@ -87,16 +87,16 @@ p {
 
 /*Badges*/
 .badge {
-  font-weight: bold;
-  width: 86px;
-  height: 11px;
-  padding: 10px;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 50px;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  height: 11px;
+  justify-content: center;
   outline: none;
+  padding: 10px;
+  width: 86px;
 }
 
 .badge_primary {
@@ -108,11 +108,42 @@ p {
   background-color: #02cdf1;
   color: white;
   font-size: 13px;
-  width: 58px;
   height: 8px;
+  width: 58px;
 }
 
 .badge_third {
   background-color: #126de4;
   color: white;
+}
+
+/*Lists*/
+
+.list {
+  color: var(--heading_color);
+  list-style: none;
+  padding-left: 0rem;
+}
+
+.list_inline .list_items {
+  display: inline-block;
+  margin-right: 3.5rem;
+}
+
+.list_items_verticle {
+  margin-bottom: 20px;
+}
+
+.list_tick {
+  list-style-image: url(./Moshify/icons/tick.svg);
+  padding-left: 5rem;
+}
+
+.list_tick .list_items {
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .list_tick .list_items {
+    padding-left: 0rem;
+  }
 }
