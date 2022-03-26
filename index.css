@@ -1,11 +1,58 @@
 :root {
+  --accent_color: #ff3400;
+  --body_color: #918ca4;
+  --heading_color: #1b0760;
   --Primary_color: #2584ff;
   --secondary_color: #00d9ff;
-  --accent_color: #ff3400;
-  --heading_color: #1b0760;
-  --body_color: #918ca4;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--body_color);
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading_color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+@media screen and (min-size: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
