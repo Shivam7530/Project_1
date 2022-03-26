@@ -1,3 +1,5 @@
+/*Defined colors*/
+
 :root {
   --accent_color: #ff3400;
   --body_color: #918ca4;
@@ -5,6 +7,8 @@
   --Primary_color: #2584ff;
   --secondary_color: #00d9ff;
 }
+
+/* Typography*/
 
 html {
   font-size: 62.5%;
@@ -54,5 +58,29 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/*links*/
+#arrow_link {
+  color: var(--accent_color);
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#arrow_link::after {
+  content: "-->";
+  margin-left: 5px;
+}
+
+#arrow_link:hover::after {
+  margin-left: 11px;
+  transition: margin-left 0.15s;
+}
+
+@media screen and (min-width: 1024px) {
+  #arrow_link {
+    font-size: 1.5rem;
   }
 }
