@@ -147,3 +147,62 @@ p {
     padding-left: 0rem;
   }
 }
+
+/*Buttons*/
+
+button {
+  outline: none;
+  border-radius: 6rem;
+  text-transform: uppercase;
+  height: 6.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.wraper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_large {
+  width: 40rem;
+}
+.button_medium {
+  width: 25rem;
+  font-size: 2rem;
+}
+.button_small {
+  width: 18rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+button img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.button_primary {
+  background-color: var(--accent_color);
+  color: white;
+  font-weight: bold;
+}
+
+.button_secondary {
+  background-color: white;
+  color: var(--heading_color);
+  border-color: var(--heading_color);
+  font-weight: bold;
+}
+
+.button_secondary:hover {
+  background-color: var(--heading_color);
+  color: white;
+}
+
+.button_primary:hover {
+  color: #fd4516;
+}
