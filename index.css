@@ -1,3 +1,11 @@
+:root {
+  --Primary_color: #2584ff;
+  --secondary_color: #00d9ff;
+  --accent_color: #ff3400;
+  --heading_color: #1b0760;
+  --body_color: #918ca4;
+}
+
 html {
   font-size: 62.5%;
 }
