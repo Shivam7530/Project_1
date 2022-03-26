@@ -84,3 +84,35 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/*Badges*/
+.badge {
+  font-weight: bold;
+  width: 86px;
+  height: 11px;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  outline: none;
+}
+
+.badge_primary {
+  background-color: var(--secondary_color);
+  color: white;
+}
+
+.badge_second {
+  background-color: #02cdf1;
+  color: white;
+  font-size: 13px;
+  width: 58px;
+  height: 8px;
+}
+
+.badge_third {
+  background-color: #126de4;
+  color: white;
+}
