@@ -159,14 +159,6 @@ button {
   white-space: nowrap;
 }
 
-.wraper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .button_large {
   width: 40rem;
 }
@@ -205,4 +197,37 @@ button img {
 
 .button_primary:hover {
   color: #fd4516;
+}
+
+/*input*/
+
+.domain {
+  width: 54rem;
+  height: 6rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  padding: 4rem;
+  box-shadow: 0 0 2rem grey;
+  color: var(--heading_color);
+  text-align: left;
+}
+
+.domain::placeholder {
+  color: lightgray;
+}
+
+@media screen and (min-width: 1024px) {
+  .domain {
+    width: 80rem;
+    font-size: 1.5rem;
+  }
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
