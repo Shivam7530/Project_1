@@ -235,10 +235,15 @@ button img {
 }
 
 .cards {
-  width: 50rem;
-  height: 50rem;
   border-radius: 1rem;
   overflow: hidden;
+  border: 1px solid gray;
+}
+
+.card_primary,
+.card_secondary {
+  width: 50rem;
+  height: 50rem;
 }
 
 .card_head {
@@ -257,4 +262,15 @@ button img {
 
 .card__head_secondary {
   background-color: var(--Primary_color);
+}
+
+@media screen and (min-width: 1024px) {
+  .card_primary {
+    width: 35rem;
+    height: 50rem;
+  }
+  .card_secondary {
+    width: 40rem;
+    height: 55rem;
+  }
 }
