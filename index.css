@@ -226,14 +226,6 @@ button img {
 
 /*Cards*/
 
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .cards {
   border-radius: 1rem;
   overflow: hidden;
@@ -272,5 +264,53 @@ button img {
   .card_secondary {
     width: 40rem;
     height: 55rem;
+  }
+}
+
+/*icons*/
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon_primary {
+  fill: var(--Primary_color);
+}
+
+/*Media Objects*/
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media_head {
+  color: var(--heading_color);
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.media_logo {
+  width: 4rem;
+}
+
+.media_body {
+  word-spacing: 1rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .media_head {
+    font-size: 2.5rem;
+  }
+
+  .media_body {
+    font-size: 1.7rem;
   }
 }
