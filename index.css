@@ -277,16 +277,11 @@ button img {
 .icon_primary {
   fill: var(--Primary_color);
 }
+.icon_white {
+  fill: white;
+}
 
 /*Media Objects*/
-
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .media_head {
   color: var(--heading_color);
@@ -312,5 +307,111 @@ button img {
 
   .media_body {
     font-size: 1.7rem;
+  }
+}
+
+/*Quotes*/
+
+.quotes {
+  background-color: white;
+  border-radius: 1rem;
+}
+
+blockquote {
+  color: var(--heading_color);
+  font-size: 2.2rem;
+  word-spacing: 1.2rem;
+  line-height: 2.8rem;
+  margin: inherit;
+  padding-bottom: 2rem;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+
+.quote_caption {
+  display: block;
+  color: var(--heading_color);
+}
+
+/*Navigation*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav_logo {
+  cursor: pointer;
+}
+
+.nav_icon {
+  padding: 0 2rem;
+}
+.icon {
+  opacity: 0.5;
+}
+
+#close_logo {
+  color: white;
+  font-size: 3rem;
+  position: fixed;
+  right: 3rem;
+  top: 1.1rem;
+  color: whitesmoke;
+  display: none;
+  cursor: pointer;
+}
+#nav_container {
+  display: none;
+}
+.nav_list_container {
+  width: 100%;
+  list-style: none;
+}
+
+.nav_list {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(133, 131, 131);
+}
+.nav_list a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
+.nav_list a:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.icon:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav_list_container {
+    width: auto;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+  }
+  .nav_list {
+    border: none;
+  }
+
+  #menu_logo {
+    display: none;
+  }
+  #nav_container {
+    display: flex;
   }
 }
