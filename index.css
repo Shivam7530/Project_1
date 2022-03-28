@@ -96,6 +96,7 @@ p {
   justify-content: center;
   outline: none;
   padding: 10px;
+  color: var(--heading_color);
   width: 86px;
 }
 
@@ -110,6 +111,7 @@ p {
   font-size: 13px;
   height: 8px;
   width: 58px;
+  display: inline;
 }
 
 .badge_third {
@@ -123,11 +125,6 @@ p {
   color: var(--heading_color);
   list-style: none;
   padding-left: 0rem;
-}
-
-.list_inline .list_items {
-  display: inline-block;
-  margin-right: 3.5rem;
 }
 
 .list_items_verticle {
@@ -152,11 +149,12 @@ p {
 
 button {
   outline: none;
-  border-radius: 6rem;
+  border-radius: 9rem;
   text-transform: uppercase;
   height: 6.8rem;
   cursor: pointer;
   white-space: nowrap;
+  border: none;
 }
 
 .button_large {
@@ -167,9 +165,13 @@ button {
   font-size: 2rem;
 }
 .button_small {
-  width: 18rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5.5rem;
+  width: 17rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 button img {
@@ -196,30 +198,43 @@ button img {
 }
 
 .button_primary:hover {
-  color: #fd4516;
+  opacity: 0.7;
 }
 
 /*input*/
 
 .domain {
-  width: 54rem;
-  height: 6rem;
-  border-radius: 5rem;
+  width: 40rem;
+  height: 4rem;
+  border-radius: 3rem;
   outline: none;
   border: none;
-  padding: 4rem;
+  padding: 1.1rem;
+  margin-bottom: 3rem;
   box-shadow: 0 0 2rem grey;
-  color: var(--heading_color);
-  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.domain::placeholder {
+.input {
+  border: inherit;
+  outline: inherit;
+  font-size: medium;
+  padding: 1.5rem;
+  text-align: left;
+  color: var(--heading_color);
+  width: 65%;
+}
+
+.input::placeholder {
   color: lightgray;
 }
 
 @media screen and (min-width: 1024px) {
   .domain {
-    width: 80rem;
+    width: 55rem;
+    height: 5rem;
     font-size: 1.5rem;
   }
 }
@@ -229,7 +244,7 @@ button img {
 .cards {
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid gray;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .card_primary,
@@ -241,6 +256,7 @@ button img {
 .card_head {
   width: 100%;
   height: 35%;
+  text-align: left;
 }
 
 .card_body {
@@ -256,7 +272,7 @@ button img {
   background-color: var(--Primary_color);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
   .card_primary {
     width: 35rem;
     height: 50rem;
@@ -272,6 +288,7 @@ button img {
 .icon {
   width: 4rem;
   height: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .icon_primary {
@@ -337,7 +354,7 @@ blockquote::after {
   color: var(--heading_color);
 }
 
-/*Navigation*/
+/*Navigation and assembly*/
 
 .nav {
   background-color: black;
@@ -397,6 +414,7 @@ blockquote::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    border-bottom: 1px solid gray;
   }
 
   .nav_logo {
@@ -431,5 +449,146 @@ blockquote::after {
 
   .nav_items a:hover {
     opacity: 1;
+  }
+}
+
+/*Banner*/
+
+.banner {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner_start {
+  height: 70vh;
+}
+
+.banner_image {
+  width: 50rem;
+}
+
+.banner_heading,
+.banner_para {
+  grid-row: 1;
+  grid-column: 1;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 0 100%, 0% 50%);
+    height: 92vh;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(1, 100%) / repeat(2, 50%);
+  }
+
+  .banner_start {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+
+  .banner_image {
+    width: 75%;
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+/*Second area*/
+
+.second_area {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.second_area p {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.second_area_list {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 100%;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+}
+
+.list_items {
+  padding-bottom: 1.3rem;
+}
+
+@media screen and (min-width: 815px) {
+  .list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .cards_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.media_image {
+  width: 45rem;
+}
+
+.second_area_mediaobject {
+  display: grid;
+  text-align: left;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 40% 40% 40% 40%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "first second" "third forth" "fifth sixth" "seventh eighth";
+  margin-bottom: 5rem;
+}
+
+.third_element {
+  grid-area: forth;
+}
+.forth_element {
+  grid-area: third;
+}
+
+.seventh_element {
+  grid-area: eighth;
+}
+.eighth_element {
+  grid-area: seventh;
+}
+
+@media screen and (max-width: 932px) {
+  .second_area_mediaobject {
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+
+  .media_image {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
   }
 }
