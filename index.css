@@ -340,78 +340,96 @@ blockquote::after {
 /*Navigation*/
 
 .nav {
+  background-color: black;
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .nav_logo {
-  cursor: pointer;
-}
-
-.nav_icon {
-  padding: 0 2rem;
-}
-.icon {
-  opacity: 0.5;
 }
 
 #close_logo {
-  color: white;
-  font-size: 3rem;
   position: fixed;
-  right: 3rem;
-  top: 1.1rem;
-  color: whitesmoke;
-  display: none;
-  cursor: pointer;
-}
-#nav_container {
-  display: none;
-}
-.nav_list_container {
-  width: 100%;
-  list-style: none;
-}
-
-.nav_list {
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgb(133, 131, 131);
-}
-.nav_list a {
-  text-decoration: none;
+  top: 1rem;
+  right: 2rem;
+  align-self: center;
+  font-size: 30px;
   color: white;
-  opacity: 0.8;
+  display: none;
 }
 
-.nav_list a:hover {
+#menu_logo {
+  padding-right: 1rem;
+  align-self: center;
+  opacity: 0.6;
+}
+
+#menu_logo:hover {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
-.icon:hover {
+#nav_container {
+  width: 85%;
+  list-style: none;
+  display: none;
+}
+
+.nav_items {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(136, 133, 133);
+}
+
+.nav_items a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.nav_items a:hover {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
-@media screen and (min-width: 1024px) {
-  .nav_list_container {
-    width: auto;
-    font-size: 1.7rem;
+@media screen and (min-width: 570px) {
+  .nav {
+    background-color: black;
     display: flex;
-    flex-direction: row;
-    padding-left: 1rem;
-  }
-  .nav_list {
-    border: none;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
-  #menu_logo {
+  .nav_logo {
+    object-fit: contain;
+  }
+
+  #close_logo,
+  #menu_logo,
+  #menu_logo:hover {
     display: none;
   }
+
   #nav_container {
+    list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav_items {
+    padding: 0 1.3rem;
+    border: none;
+    font-size: 1.5rem;
+  }
+
+  .nav_items a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    font-weight: 100;
+  }
+
+  .nav_items a:hover {
+    opacity: 1;
   }
 }

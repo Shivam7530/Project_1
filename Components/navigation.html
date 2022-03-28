@@ -1,17 +1,18 @@
 <nav class="nav">
-  <img src="./Moshify/images/logo.png" alt="" class="nav_logo" />
-  <span onclick="nav_close()" id="close_logo">&times;</span>
-  <svg id="menu_logo" class="icon icon_white nav_icon" onclick="expand()">
+  <img src="/Moshify/images/logo.png" alt="" class="nav_logo" />
+  <span onclick="closed()" id="close_logo">&times;</span>
+  <svg onclick="extend()" id="menu_logo" class="icon icon_white">
     <use xlink:href="./Logos/sprite.svg#menu"></use>
   </svg>
-
-  <ul class="nav_list_container" id="nav_container">
-    <li class="nav_list"><a href="#">Hoisting</a></li>
-    <li class="nav_list"><a href="#">VPS</a></li>
-    <li class="nav_list"><a href="#">Domain</a></li>
-    <li class="nav_list"><a href="#">Pricing</a></li>
+  <ul id="nav_container">
+    <li class="nav_items"><a href="#">Hoisting</a></li>
+    <li class="nav_items"><a href="#">VPS</a></li>
+    <li class="nav_items"><a href="#">Domain</a></li>
+    <li class="nav_items"><a href="#">Pricing</a></li>
   </ul>
 </nav>
 
-<!--add script -->
-<script src="/index.js"></script>
+<!--
+  <script src="/index.js"></script>
+
+  -->
