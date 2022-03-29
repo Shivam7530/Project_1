@@ -132,7 +132,7 @@ p {
 }
 
 .list_tick {
-  list-style-image: url(./Moshify/icons/tick.svg);
+  list-style-image: url(/Logos/tick.svg);
   padding-left: 5rem;
 }
 

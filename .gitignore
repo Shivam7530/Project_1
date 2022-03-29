@@ -2,3 +2,6 @@
 /temp.html
 /playground.html
 /playground.css
+/node_modules
+/dist
+/.cache
