@@ -844,4 +844,16 @@ blockquote::after {
   box-shadow: 0 0 5rem rgb(92, 91, 91);
 }
 
-/*footer*/
+.card_body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.list_tick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
