@@ -89,6 +89,7 @@ p {
 .badge {
   align-items: center;
   border-radius: 50px;
+  color: var(--heading_color);
   display: flex;
   font-size: 15px;
   font-weight: bold;
@@ -96,7 +97,6 @@ p {
   justify-content: center;
   outline: none;
   padding: 10px;
-  color: var(--heading_color);
   width: 86px;
 }
 
@@ -108,10 +108,10 @@ p {
 .badge_second {
   background-color: #02cdf1;
   color: white;
+  display: inline;
   font-size: 13px;
   height: 8px;
   width: 58px;
-  display: inline;
 }
 
 .badge_third {
@@ -148,35 +148,35 @@ p {
 /*Buttons*/
 
 button {
-  outline: none;
   border-radius: 9rem;
-  text-transform: uppercase;
-  height: 6.8rem;
-  cursor: pointer;
-  white-space: nowrap;
   border: none;
+  cursor: pointer;
+  height: 6.8rem;
+  outline: none;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .button_large {
   width: 40rem;
 }
 .button_medium {
-  width: 25rem;
   font-size: 2rem;
+  width: 25rem;
 }
 .button_small {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 5.5rem;
-  width: 17rem;
-  text-align: center;
+  display: flex;
   font-size: 1.5rem;
+  height: 5.5rem;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 17rem;
 }
 
 button img {
-  width: 2.5rem;
   height: 2.5rem;
+  width: 2.5rem;
 }
 
 .button_primary {
@@ -187,8 +187,8 @@ button img {
 
 .button_secondary {
   background-color: white;
-  color: var(--heading_color);
   border-color: var(--heading_color);
+  color: var(--heading_color);
   font-weight: bold;
 }
 
@@ -204,26 +204,26 @@ button img {
 /*input*/
 
 .domain {
-  width: 40rem;
-  height: 4rem;
+  align-items: center;
   border-radius: 3rem;
-  outline: none;
   border: none;
-  padding: 1.1rem;
-  margin-bottom: 3rem;
   box-shadow: 0 0 2rem grey;
   display: flex;
+  height: 4rem;
   justify-content: flex-end;
-  align-items: center;
+  margin-bottom: 3rem;
+  outline: none;
+  padding: 1.1rem;
+  width: 40rem;
 }
 
 .input {
   border: inherit;
-  outline: inherit;
+  color: var(--heading_color);
   font-size: medium;
+  outline: inherit;
   padding: 1.5rem;
   text-align: left;
-  color: var(--heading_color);
   width: 65%;
 }
 
@@ -233,9 +233,9 @@ button img {
 
 @media screen and (min-width: 1024px) {
   .domain {
-    width: 55rem;
-    height: 5rem;
     font-size: 1.5rem;
+    height: 5rem;
+    width: 55rem;
   }
 }
 
@@ -243,20 +243,20 @@ button img {
 
 .cards {
   border-radius: 1rem;
-  overflow: hidden;
   margin: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
 }
 
 .card_primary,
 .card_secondary {
-  width: 50rem;
   height: 50rem;
+  width: 50rem;
 }
 
 .card_head {
-  width: 100%;
   height: 35%;
   text-align: left;
+  width: 100%;
 }
 
 .card_body {
@@ -274,21 +274,21 @@ button img {
 
 @media screen and (min-width: 900px) {
   .card_primary {
-    width: 35rem;
     height: 50rem;
+    width: 35rem;
   }
   .card_secondary {
-    width: 40rem;
     height: 55rem;
+    width: 40rem;
   }
 }
 
 /*icons*/
 
 .icon {
-  width: 4rem;
   height: 4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  width: 4rem;
 }
 
 .icon_primary {
@@ -302,9 +302,9 @@ button img {
 
 .media_head {
   color: var(--heading_color);
-  padding-bottom: 1rem;
-  font-weight: bold;
   font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .media_logo {
@@ -312,10 +312,10 @@ button img {
 }
 
 .media_body {
-  word-spacing: 1rem;
-  line-height: 3rem;
   font-size: 2rem;
+  line-height: 3rem;
   padding-bottom: 2rem;
+  word-spacing: 1rem;
 }
 @media screen and (min-width: 1024px) {
   .media_head {
@@ -337,10 +337,10 @@ button img {
 blockquote {
   color: var(--heading_color);
   font-size: 2.2rem;
-  word-spacing: 1.2rem;
   line-height: 2.8rem;
   margin: inherit;
   padding-bottom: 2rem;
+  word-spacing: 1.2rem;
 }
 blockquote::before {
   content: open-quote;
@@ -350,8 +350,8 @@ blockquote::after {
 }
 
 .quote_caption {
-  display: block;
   color: var(--heading_color);
+  display: block;
 }
 
 /*Navigation and assembly*/
@@ -359,27 +359,27 @@ blockquote::after {
 .nav {
   background-color: black;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav_logo {
 }
 
 #close_logo {
-  position: fixed;
-  top: 1rem;
-  right: 2rem;
   align-self: center;
-  font-size: 30px;
   color: white;
   display: none;
+  font-size: 30px;
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
 }
 
 #menu_logo {
-  padding-right: 1rem;
   align-self: center;
   opacity: 0.6;
+  padding-right: 1rem;
 }
 
 #menu_logo:hover {
@@ -387,21 +387,21 @@ blockquote::after {
 }
 
 #nav_container {
-  width: 85%;
-  list-style: none;
   display: none;
+  list-style: none;
+  width: 85%;
 }
 
 .nav_items {
-  padding: 1rem 0;
   border-bottom: 1px solid rgb(136, 133, 133);
+  padding: 1rem 0;
 }
 
 .nav_items a {
   color: white;
   font-weight: bold;
-  text-decoration: none;
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .nav_items a:hover {
@@ -411,10 +411,10 @@ blockquote::after {
 @media screen and (min-width: 570px) {
   .nav {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     border-bottom: 1px solid gray;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .nav_logo {
@@ -428,23 +428,23 @@ blockquote::after {
   }
 
   #nav_container {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    list-style: none;
   }
 
   .nav_items {
-    padding: 0 1.3rem;
     border: none;
     font-size: 1.5rem;
+    padding: 0 1.3rem;
   }
 
   .nav_items a {
     color: white;
-    text-decoration: none;
-    opacity: 0.7;
     font-weight: 100;
+    opacity: 0.7;
+    text-decoration: none;
   }
 
   .nav_items a:hover {
@@ -455,12 +455,12 @@ blockquote::after {
 /*Banner*/
 
 .banner {
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  align-items: center;
   background-color: black;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -472,62 +472,71 @@ blockquote::after {
   width: 50rem;
 }
 
+.white_heading {
+  color: white;
+}
+
+.white_para {
+  color: white;
+  font-size: 2rem;
+}
+
 .banner_heading,
 .banner_para {
-  grid-row: 1;
   grid-column: 1;
-  color: white;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 @media screen and (min-width: 1024px) {
   .banner {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 0 100%, 0% 50%);
-    height: 92vh;
     background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 0 100%, 0% 50%);
     display: grid;
     grid-template: repeat(1, 100%) / repeat(2, 50%);
+    height: 92vh;
   }
 
   .banner_start {
-    grid-row: 1;
-    grid-column: 1;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
     justify-content: center;
-    align-items: center;
     text-align: right;
   }
 
   .banner_image {
-    width: 75%;
-    grid-row: 1;
     grid-column: 2;
+    grid-row: 1;
+    width: 75%;
   }
 }
 
 /*Second area*/
 
 .second_area {
-  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
-  align-items: center;
   padding-top: 1rem;
+  padding: 4rem;
+  text-align: center;
 }
 
 .second_area p {
-  margin-bottom: 5rem;
   font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
 .second_area_list {
-  width: 80%;
   display: grid;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   justify-items: center;
-  grid-template-columns: 50% 50%;
+  width: 80%;
 }
 
 .list_items {
@@ -542,9 +551,9 @@ blockquote::after {
 
 @media screen and (min-width: 1152px) {
   .cards_container {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
 
@@ -553,14 +562,15 @@ blockquote::after {
 }
 
 .second_area_mediaobject {
-  display: grid;
-  text-align: left;
-  justify-items: center;
   align-items: center;
-  grid-template-rows: 40% 40% 40% 40%;
-  grid-template-columns: 50% 50%;
+  display: grid;
   grid-template-areas: "first second" "third forth" "fifth sixth" "seventh eighth";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40% 40%;
+  justify-items: center;
   margin-bottom: 5rem;
+  margin-bottom: 10rem;
+  text-align: left;
 }
 
 .third_element {
@@ -579,16 +589,170 @@ blockquote::after {
 
 @media screen and (max-width: 932px) {
   .second_area_mediaobject {
-    text-align: left;
-    flex-direction: column;
-    display: flex;
-    justify-items: center;
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     padding-bottom: 2rem;
+    text-align: left;
   }
 
   .media_image {
-    margin-top: 2rem;
     margin-bottom: 10rem;
+    margin-top: 2rem;
+  }
+}
+
+.second_area_blackpane {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 50rem;
+  width: 100vw;
+}
+
+.blackpane_media_image {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  width: 50rem;
+}
+
+.blackpane_media {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  text-align: left;
+}
+
+.blackpane_media section {
+  margin-bottom: 3rem;
+}
+
+.white_para {
+  color: lightgray;
+}
+
+.blackpane_icon {
+  height: 4rem;
+  margin-bottom: 0;
+  margin-right: 2rem;
+  width: 4rem;
+}
+
+.blackpane_media section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/*second area black pane*/
+
+.second_area_blackpane {
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+  margin-bottom: 5rem;
+  width: 100vw;
+}
+
+.blackpane_container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 100%;
+  height: 80%;
+  justify-items: center;
+}
+
+.media_data {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.media_data section {
+  margin: 4rem 2rem;
+}
+
+.blackpane_media_image {
+  width: 95%;
+  height: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .second_area_blackpane {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+  }
+
+  .blackpane_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.media_data .media_body {
+  color: white;
+  opacity: 0.8;
+}
+
+/*second area last phase*/
+
+.second_area_lastphase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.testimonial {
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem rgb(78, 77, 77);
+  display: grid;
+  grid-row: 100%;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  width: 70vw;
+}
+
+.testimonial_image {
+  padding: 3rem;
+  width: 90%;
+}
+
+.testimonial_data {
+  text-align: left;
+}
+
+.testimonial_refer {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial_liststyle {
+  padding-right: 2rem;
+  width: 10%;
+}
+
+@media screen and (max-width: 1020px) {
+  .testimonial {
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgb(78, 77, 77);
+    display: flex;
+    flex-direction: column;
+    grid-row: 100%;
+    justify-items: center;
+    width: 95vw;
+  }
+
+  .testimonial_data {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.2rem;
+    text-align: left;
   }
 }
