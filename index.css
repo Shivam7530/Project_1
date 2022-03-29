@@ -258,6 +258,11 @@ button img {
   overflow: hidden;
 }
 
+.cards:hover {
+  transform: perspective(200px) translateZ(10px);
+  transition: transform 0.3s;
+}
+
 .card_primary,
 .card_secondary {
   height: 50rem;
@@ -772,11 +777,9 @@ blockquote::after {
 
 .last_banner {
   align-items: center;
-  border: 2px solid blue;
   display: flex;
   height: 28vh;
   justify-content: center;
-  margin: 10rem;
   width: 100vw;
 }
 
@@ -784,7 +787,6 @@ blockquote::after {
   align-items: center;
   background-color: var(--Primary_color);
   border-radius: 1rem;
-  box-shadow: 0 0 5rem rgb(92, 91, 91);
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 100%;
@@ -837,3 +839,9 @@ blockquote::after {
     text-align: left;
   }
 }
+
+.shadow {
+  box-shadow: 0 0 5rem rgb(92, 91, 91);
+}
+
+/*footer*/

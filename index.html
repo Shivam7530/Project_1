@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
@@ -42,7 +43,7 @@
           Get Started
         </button>
       </div>
-      <img class="banner_image" src="/Moshify/images/banner.png" alt="" />
+      <img   class="banner_image" src="/Moshify/images/banner.png" alt="" />
     </section>
 
     <section class="second_area">
@@ -79,17 +80,17 @@
       </div>
       
       
-      <section class="cards_container">
-        <section class="cards card_primary">
+      <section class="cards_container  ">
+        <section class="cards card_primary shadow">
           <div class="card_head card__head_primary">
           </div>
           <div class="card_body"></div>
         </section>
-        <section class="cards card_secondary">
+        <section class="cards card_secondary shadow">
           <div class="card_head card__head_secondary"></div>
           <div class="card_body"></div>
         </section>
-        <section class="cards card_primary">
+        <section class="cards card_primary shadow">
           <div class="card_head card__head_primary">
           </div>
         
@@ -101,7 +102,7 @@
 
 <article class="second_area_mediaobject">
 
-  <section class="first_element">
+  <section  class="first_element">
     <svg class="icon icon_primary">
       <use xlink:href="./Logos/sprite.svg#easy"></use>
     </svg>
@@ -114,7 +115,7 @@
 
     <a id="arrow_link" href="">LEARN MORE</a>
   </section>
-<img class="secont_element media_image" src="/Moshify/images/easy.jpg" alt="">
+<img  class="secont_element media_image" src="/Moshify/images/easy.jpg" alt="">
 
   <section class="third_element">
     <svg class="icon icon_primary">
@@ -235,7 +236,7 @@
 
 
 <section class="last_banner">
-<article class="last_banner_container">
+<article class="last_banner_container shadow">
 <div class="first_area">
   <h3 class="white_heading first_area_heading">Ready to Get Started?</h3>
 <p class="first_area_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis ratione non molestiae, corrupti iure libero voluptate, ut voluptatum dicta sint nisi quia quae neque.</p>
@@ -249,7 +250,10 @@
 
 
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
   <script src="/index.js"></script>
   </html>
-  
