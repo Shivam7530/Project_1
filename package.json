@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.4.0"
+    "cssnano": "^5.1.5",
+    "parcel": "^2.4.0",
+    "postcss": "^8.4.12"
   }
 }
